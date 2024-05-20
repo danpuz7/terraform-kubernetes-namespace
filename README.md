@@ -3,7 +3,7 @@
 ### Please copy paste below code
 
 ```
-module namespace {
+module "testns" {
     source = "danpuz7/namespace/kubernetes"
     name   = "testns"
     annotations = {
