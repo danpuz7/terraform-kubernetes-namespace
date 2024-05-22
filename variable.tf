@@ -10,8 +10,26 @@ variable "annotations" {
   default     = {}
 }
 
-variable "labels" {
+variable labels {
   description = "Please provide labels"
   type        = map
   default     = {}
+}
+
+variable pod_quota {
+  description = "Please specify pod quota"
+  type = string 
+  default = ""
+}
+
+variable pod_cpu_limit {
+  description = "Please specify CPU limit"
+  type = string 
+  default = ""
+}
+
+variable pod_memory_limit {
+  description = "Please specify memory limit"
+  type = string 
+  default = ""
 }
