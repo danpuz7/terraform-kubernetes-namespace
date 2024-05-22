@@ -6,6 +6,7 @@ resource "kubernetes_namespace" "example" {
   }
 }
 
+
 resource "kubernetes_resource_quota" "example" {
   metadata {
     name = "pod-quota"
@@ -18,7 +19,6 @@ resource "kubernetes_resource_quota" "example" {
     scopes = ["BestEffort"]
   }
 }
-
 
 resource "kubernetes_limit_range" "example" {
   metadata {
